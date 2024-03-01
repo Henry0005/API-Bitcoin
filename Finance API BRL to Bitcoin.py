@@ -8,7 +8,7 @@ def convert_currency(amount, from_currency, to_currency):
     exchange_rate = data["rates"][to_currency]/data["rates"][from_currency]
     return amount * exchange_rate
 
-amount = float(input("Digite a quantidade em Reais: "))
+amount = float(input("Digite a quantia em Reais: "))
 converted_amount = convert_currency(amount, "BRL", "BTC")
 
 print(f"{amount} Reais é igual a {converted_amount} Bitcoins")
